@@ -1,1 +1,292 @@
+/*   NORMALIZE BEGINS   */
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}.clearfix:after{visibility:hidden;display:block;font-size:0;content:' ';clear:both;height:0;}p,h1,h2,h3,h4,h5,h6,ul,li,img,section,main,figure,article,aside,footer,header{padding:0;margin:0}html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden;}
+
+/*    NORMALIZE ENDS    */
+
+/*  Base Styles */
+
+html {
+  font:125% "Catamaran",sans-serif;
+}
+
+body {
+  background-color:#fff;
+  color:#1f2022;
+  font-size:1em;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover,a.currentPage {
+  color:#e85b26;
+}
+
+h1,h2,h3,h4 {
+  margin:0;
+  font-family:"Nova Flat",cursive;
+  font-weight:400;
+}
+
+a,h1,h2,h3,.headerSocialButtons a:hover {
+  color:#186684;
+}
+
+h1 {
+  font-size:7.3rem;
+  line-height:6.2rem;
+}
+
+h2,h4 {
+  font-size:2.1rem;
+}
+
+h3 {
+  font-size:1.5rem;
+}
+
+h4 {
+  color:#e85b26;
+  margin-bottom:.6rem;
+}
+
+img {
+  width:100%;
+}
+
+input:required {
+  box-shadow:none;
+}
+
+ul {
+  list-style:none;
+  margin:0 auto;
+}
+
+/*  Generic Element Styles  */
+
+.wrapper {
+  margin:0 auto;
+  max-width:1600px;
+  position:relative;
+  height:100%
+}
+
+.reactiveOn {
+  display:none;
+}
+
+.readMore {
+  border:3px solid #e85b26;
+  background-color:#fff;
+  font:1em "Nova Flat",cursive;
+  color:#186684;
+  text-transform:uppercase;
+  padding:.6rem .8rem;
+  width:9em;
+  float:left;
+  text-align:center;
+}
+
+.readMore a:hover,.readMore:hover,.readMore:hover a {
+  background-color:#e85b26;
+  color:#fff;
+}
+
+.srOnly {
+  position:absolute;
+  visibility:hidden;
+}
+
+/*  Header  */
+
+header {
+  background-image:url(../assets/shoePattern.jpg);
+  background-size:cover;
+  background-position:center center;
+  height:100vh;
+  min-height:600px;
+}
+
+header .wrapper {
+  overflow:hidden;
+}
+
+.headerTitleText {
+  background-color:rgba(227,228,234,.89);
+  top:40vh;
+  display:block;
+  padding:1rem;
+  position:absolute;
+  right:20vw;
+  width:4em;
+}
+
+.mobileButton {
+  display:none;
+}
+
+.topNav {
+  font:1em "Nova Flat",cursive;
+  padding-top:1.8rem;
+}
+
+.topNav ul {
+  width:22em;
+}
+
+.topNav li {
+  float:left;
+  width:5em;
+  text-align:center;
+}
+
+.headerSocialButtons {
+  position:absolute;
+  right: 15px;
+  top: calc(50% - 122px);
+  overflow:hidden;
+}
+
+.headerSocialButtons a {
+  color:#e85b26;
+  font-size:1.1em;
+}
+
+/*  About Section */
+
+.about {
+  height:100%;
+}
+
+.aboutBox {
+  float:left;
+  width:50%;
+  margin:0;
+}
+
+.aboutBoxImage {
+  height:100%;
+}
+
+.aboutBoxImage img {
+  display:block;
+}
+
+.aboutBoxText {
+  margin:20% 0 0;
+  width:80%;
+}
+
+.aboutBox1 {
+  padding-left:10%;
+  float:left;
+}
+
+.aboutBox2 {
+  float:right;
+}
+
+.aboutBox3 {
+  clear:both;
+}
+
+.aboutBox4 {
+  padding-left:6%;
+}
+
+/*  Blog  */
+
+.blogArticle {
+  background-color:#f4f4f4;
+  height:530px;
+  padding:6% 10%;
+}
+
+.blogPic {
+  width:315px;
+  float:left;
+  margin-right:50px;
+}
+
+/*  Middle Nav  */
+
+.middleNav {
+  background-image:url(../assets/shoePatternWhite.jpg);
+  background-size:cover;
+  padding:8% 0;
+}
+
+.middleNavList {
+  background-color:#f4f4f4;
+  margin:0 auto;
+  width:55%;
+  padding:4rem;
+  text-align:center;
+}
+
+.middleNavItem {
+  color:#e85b26;
+  font-size:2em;
+  width:calc(100%/3);
+  margin:0;
+  float:left;
+}
+
+/*  Picture Gallery */
+
+.gallerySection h2 {
+  text-align:center;
+  padding:5% 0;
+}
+
+.gallery {
+  width:80%;
+  margin:0 auto;
+  padding-bottom:5%;
+}
+
+.gallery img {
+  width:calc((100%/3) - 4%);
+  float:left;
+  margin:0 2%;
+}
+
+/*  Footer  */
+
+.bottomFooter {
+  background-color:#000;
+  text-align:center;
+  color:#f4f4f4;
+  font-size:.8em;
+  padding:10px 0;
+  clear:both;
+}
+
+.bottomFooter p {
+  margin:0;
+}
+
+.footerNav {
+  margin:0 auto;
+  padding:0;
+  width:19em;
+  font-family:"Nova Flat",cursive;
+}
+
+.footerNav a:not(.currentPage) {
+  color:#1f2022;
+}
+
+.footerNav a:hover {
+  color:#e85b26;
+}
+
+.footerNav li {
+  float:left;
+  width:4.5em;
+  text-align:center;
+  padding:5rem 1rem;
+}

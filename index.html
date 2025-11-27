@@ -3,10 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Nova+Flat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
+  <title>Foot-Forward</title>
 </head>
+
 <body>
-  <script src="./js/script.js"></script>
+  <header id="home">
+    <div class="wrapper">
+      <nav class="topNav">
+        <div class="mobileButton reactiveOn reactiveOn768">
+          <label for="mobileButtonCheckbox" name="mobileBars" id="mobileBars" class="mobileBars"  aria-hidden="true"><i
+              class="fas fa-bars"></i></label>
+          <input type="checkbox" name="mobileButtonCheckbox" id="mobileButtonCheckbox" id="mobileButtonCheckbox"
+            class="mobileButtonCheckbox" aria-hidden="true">
+        </div>
+        <ul>
+          <li><a href="#home" class="currentPage">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="headerTitleText">Foot Forward</h1>
+    </div>
+  </header>
+  <section id="about" class="about clearfix">
+    <div class="wrapper">
+      <figure class="aboutBox2 aboutBox aboutBoxImage">
+        <img src="./assets/shoesAssortment.jpg" alt="">
+      </figure>
+      <figure class="aboutBox1 aboutBox">
+        <div class="aboutBoxText">
+          <h2>We specialize in:</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.
+            Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus.
+            Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+          <div class="readMore"><a href="#">read more</a></div>
+        </div>
+      </figure>
+      <figure class="aboutBox3 aboutBox aboutBoxImage">
+        <img src="./assets/shoeHover.jpg" alt="">
+      </figure>
+      <figure class="aboutBox4 aboutBox">
+        <div class="aboutBoxText">
+          <h2>Foot care</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend.
+            Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus.
+            Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+          <div class="readMore"><a href="#">read more</a></div>
+        </div>
+      </figure>
+    </div>
+  </section>
+  <section id="blog" class="blog">
+    <div class="wrapper">
+      <article class="blogArticle">
+        <div class="blogPic">
+          <img src="./assets/runningShoes.jpg" alt="">
+        </div>
+        <h2>Giving Back</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat molestias fugit. Explicabo adipisci
+          quaerat, reprehenderit saepe vero ipsam dolorem ipsum exercitationem, iusto ut officia beatae provident
+          delectus fugit unde nulla est suscipit earum culpa voluptatem totam praesentium eaque nam. Repellendus
+          sapiente optio id nesciunt repellat saepe, velit eos harum quo, enim minima. Sequi perspiciatis suscipit
+          impedit quidem laudantium harum?</p>
+        <div class="blogButton readMore"><a href="#">Read More</a></div>
+      </article>
+    </div>
+  </section>
+  <section class="middleNav">
+    <div class="wrapper">
+      <ul class="middleNavList clearfix">
+        <li class="middleNavItem">
+          <a href="#"><i class="fas fa-shopping-bag" aria-hidden="true" title="Products"></i>
+          <h3>Products</h3></a>
+        </li>
+        <li class="middleNavItem">
+          <a href="#"><i class="fas fa-users" aria-hidden="true" title="Community"></i>
+          <h3>Community</h3></a>
+        </li>
+        <li class="middleNavItem">
+          <a href="#"><i class="fas fa-phone" aria-hidden="true" title="Reach Out"></i>
+          <h3>Reach Out</h3></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="gallerySection">
+    <div class="wrapper">
+      <h2>The Gram</h2>
+      <div class="gallery clearfix">
+        <img src="./assets/shoeSky.jpg" alt="">
+        <img src="./assets/twoShoes.jpg" alt="">
+        <img src="./assets/whiteShoe.jpg"
+          alt=""
+          class="reactiveOff reactiveOff1024">
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="contact">
+    <div class="wrapper">
+      <ul class="footerNav clearfix">
+        <li><a href="#home" class="currentPage">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="bottomFooter clearfix">
+      <p>Copyright &copy; 2025 MyRealCompany Inc LLC</p>
+    </div>
+  </footer>
 </body>
 </html>
