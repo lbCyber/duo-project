@@ -100,6 +100,24 @@ ul {
   visibility:hidden;
 }
 
+/*  Skip Box  */
+
+.skipbox {
+  background-color:rgba(255,255,255,0.9);
+  border:3px solid #e85b26;
+  border-radius:4px;
+  left:37.5%;
+  position:absolute;
+  text-align:center;
+  top:-1000px;
+  width:30%;
+  z-index:999;
+}
+
+.skipbox:focus {
+  top:0px;
+}
+
 /*  Header  */
 
 header {
