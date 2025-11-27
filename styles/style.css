@@ -290,3 +290,307 @@ header .wrapper {
   text-align:center;
   padding:5rem 1rem;
 }
+
+@media only screen and (max-width:1280px) {
+
+  /*  Generic Element Styles 1280px  */
+
+  .wrapper {
+    max-width:1280px;
+  }
+
+  /*  Header 1280px  */
+
+  .headerTitleText {
+    right:8vw;
+  }
+
+  /*  About Section, Blog 1280px */
+
+  .about,.blog {
+    font-size:90%;
+    line-height:1.5em;
+  }
+
+  .aboutBoxText {
+    margin:20% 0 0;
+    width:90%;
+  }
+
+  .aboutBox1 {
+    padding-left:5%;
+  }
+
+  /*  Middle Nav 1280px  */
+
+  .middleNavList {
+    width:75%;
+  }
+
+  .middleNavItem h3 {
+    font-size:1.2rem;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+
+  /*  Generic Element Styles 1024px  */
+
+  .wrapper {
+    max-width:1024px;
+  }
+
+  .reactiveOff1024 {
+    display:none;
+  }
+
+    .readMore:not(.blogButton) {
+      margin:0 auto;
+      float:none;
+    }
+
+  /*  Header 1024px  */
+
+  .headerTitleText {
+    font-size:6rem;
+    line-height:5.5rem;
+  }
+
+  /*  About Section 1024px */
+
+  .aboutBox {
+    width:100%;
+  }
+
+  .aboutBox1,.aboutBox4 {
+    padding:0;
+  }
+
+  .aboutBox2 {
+    margin-top:10%;
+  }
+
+  .aboutBoxImage {
+    height:350px;
+    overflow:hidden;
+    padding:0 10%;
+  }
+
+  .aboutBoxText {
+    margin:5% 10%;
+    width:80%;
+  }
+
+  /*  Blog 1024px */
+
+  .blogArticle {
+    font-size:90%;
+    line-height:1.5em;
+    padding:8%;
+    height:480px;
+  }
+
+  .blogArticle h2,.blogArticle p,.blogButton {
+    width:50%;
+    float:right;
+  }
+
+  .blogPic {
+    margin-right:0;
+  }
+
+  /*  Gallery 1024px  */
+
+  .gallery img {
+    width:46%;
+  }
+
+  /*  Footer 1024px */
+
+  .footerNav li {
+    padding:4rem 1rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+  /*  Base Styles 768px */
+
+  h2,h4 {
+    font-size:1.7rem;
+  }
+
+  /*  Generic Element Styles 768px */
+
+  .wrapper {
+    max-width:768px;
+  }
+
+  .reactiveOff768 {
+    display:none;
+  }
+
+  .reactiveOn768 {
+    display:initial;
+  }
+
+  /*  Header 768px  */
+
+  .mobileBars {
+    float:right;
+    font-size:2.5rem;
+    color:#186684;
+    width:2rem;
+    height:2rem;
+    padding:1rem 4rem 0 0;
+    transform:scaleY(.7);
+  }
+
+  .headerTitleText {
+    font-size:5rem;
+    line-height:4.5rem;
+    padding:1rem;
+    width:20.5rem;
+  }
+
+  input.mobileButtonCheckbox {
+    visibility:hidden;
+    position:absolute;
+  }
+
+  .topNav {
+    padding-top:0;
+    height:100vh;
+  }
+
+  .topNav ul {
+    background-color:rgba(227,228,234,.89);
+    padding-left:0;
+    position:absolute;
+    right:-150%;
+    z-index:10;
+    height:100vh;
+  }
+
+  .topNav li {
+    text-align:center;
+    float:none;
+    font-size:3rem;
+    line-height:5rem;
+    margin:0 auto;
+    height:25vh;
+  }
+
+  /*  About Section 768px */
+
+  .aboutBoxImage {
+    width:100%;
+    padding:0;
+  }
+
+  .aboutBox2 {
+    margin-top:0;
+  }
+
+  .aboutBoxText,.blogArticle h2 {
+    margin:5% auto 8%;
+    text-align:center;
+    width:90%;
+  }
+
+  /*  Blog 768px  */
+
+  .blogArticle {
+    height:unset;
+  }
+
+  .blogArticle p,.blogPic {
+    width:80%;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .blogArticle h2 {
+    margin:5% auto 0;
+    float:none;
+    width:80%;
+    margin:2.5rem auto 1rem;
+  }
+
+  .blogButton {
+    width:50%;
+    float:none;
+    margin:2rem auto;
+  }
+
+  /*  Middle Nav 768px  */
+
+  .middleNavList {
+    width:400px;
+  }
+
+  /*  Footer 768px  */
+
+  .middleNavItem {
+    float:none;
+    width:100%;
+    text-align:center;
+  }
+
+  .middleNavItem {
+    margin:1rem auto;
+  }
+}
+
+@media only screen and (max-width:460px) {
+
+  /*  Generic Element Styles 420px  */
+
+  .wrapper {
+    max-width:460px;
+    min-width:320px;
+  }
+
+  /*  Header 420px  */
+
+  header {
+    background-position:35%;
+  }
+
+  .headerTitleText {
+    font-size:3.5rem;
+    line-height:3.5rem;
+    width:15rem;
+    top:15rem;
+    right:1rem;
+  }
+
+  .topNav {
+    right:150%;
+  }
+
+  /*  About Section 420px */
+
+  .aboutBoxImage {
+    height:200px;
+    margin-bottom: 2rem;
+  }
+
+  /*  Blog 420px  */
+
+  .blogArticle p {
+    width:100%;
+  }
+
+  .blogPic {
+    width:100%;
+  }
+
+  /*  Middle Nav 420px  */
+
+  .middleNavList {
+    padding:3rem;
+    width:70%;
+  }
+}
