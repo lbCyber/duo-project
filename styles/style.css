@@ -100,6 +100,25 @@ ul {
   visibility:hidden;
 }
 
+/*  Skip Box  */
+
+.skipbox {
+  background-color:rgba(255,255,255,0.9);
+  border:3px solid #e85b26;
+  border-radius:4px;
+  left:37.5%;
+  position:absolute;
+  text-align:center;
+  top:-1000px;
+  width:30%;
+  z-index:999;
+}
+
+.skipbox:focus {
+  top:0px;
+}
+
+
 /*  Header  */
 
 header {
@@ -256,6 +275,10 @@ header .wrapper {
 
 /*  Footer  */
 
+.contact:not(.bottomFooter) {
+  background-color:#f4f4f4;
+}
+
 .bottomFooter {
   background-color:#000;
   text-align:center;
@@ -265,7 +288,7 @@ header .wrapper {
   clear:both;
 }
 
-.bottomFooter p {
+.bottomFooter p,.footerContact p {
   margin:0;
 }
 
@@ -291,7 +314,61 @@ header .wrapper {
   padding:5rem 1rem;
 }
 
+.footerBox {
+  float:left;
+  width:calc(50% - 8rem);
+  margin:0;
+}
+
+.footerContact {
+  margin:0 0 4rem 8rem;
+}
+
+.footerForm input {
+  width:70%;
+  margin:0;
+  float:left;
+  height:2rem;
+  padding-left:1rem;
+  background-color:#fff;
+  border:0;
+}
+
+.footerForm button {
+  width:30%;
+  float:left;
+  border:3px solid #e85b26;
+  background-color:#186684;
+  text-transform:uppercase;
+  color:#fff;
+  font-family:"Nova Flat",cursive;
+  height:2rem;
+}
+
 @media only screen and (max-width:1280px) {
+
+  /*  Footer 1280px  */
+
+  .footerContact {
+    margin:0 0 4rem 6rem;
+  }
+
+  .footerBox {
+    width:calc(50% - 6rem);
+    font-size:90%;
+  }
+
+  .footerBox p {
+    line-height:1.2rem;
+  }
+
+  .footerForm button,.footerForm input {
+    float:none;
+    width:100%;
+  }
+
+  .footerForm button {
+    margin-bottom:2rem;
 
   /*  Generic Element Styles 1280px  */
 
@@ -532,7 +609,7 @@ header .wrapper {
 
   /*  Footer 768px  */
 
-  .middleNavItem {
+  .footerBox, .middleNavItem {
     float:none;
     width:100%;
     text-align:center;
@@ -540,6 +617,28 @@ header .wrapper {
 
   .middleNavItem {
     margin:1rem auto;
+  }
+
+  .footerBox {
+    margin:0 auto;
+    margin-bottom:1.5rem;
+  }
+
+  .footerForm {
+    margin-top:3rem;
+  }
+
+  .footerForm p {
+    margin-top:1.5rem;
+  }
+
+  .footerForm form {
+    width:90%;
+    margin:0 auto;
+  }
+
+  .footerForm input {
+    margin-bottom:5px;
   }
 }
 
